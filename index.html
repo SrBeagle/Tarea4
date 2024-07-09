@@ -12,7 +12,7 @@
       
       
       
-        <link rel="next" href="about.html">
+        <link rel="next" href="reference.html">
       
       
       <link rel="icon" href="assets/images/favicon.png">
@@ -69,11 +69,6 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
-      
-        
-        <a href="#welcome-to-mkdocs" class="md-skip">
-          Skip to content
-        </a>
       
     </div>
     <div data-md-component="announce">
@@ -230,19 +225,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  <span class="md-ellipsis">
-    Home
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
       
       <a href="index.html" class="md-nav__link md-nav__link--active">
         
@@ -254,63 +236,6 @@
 
       </a>
       
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="about.html" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    About
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -342,11 +267,11 @@
   
   
     <li class="md-nav__item">
-      <a href="explanation.html" class="md-nav__link">
+      <a href="about.html" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    Explanation
+    About
   </span>
   
 
@@ -372,34 +297,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#commands" class="md-nav__link">
-    <span class="md-ellipsis">
-      Commands
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#project-layout" class="md-nav__link">
-    <span class="md-ellipsis">
-      Project layout
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -417,21 +314,45 @@
   
 
 
-<h1 id="welcome-to-mkdocs">Welcome to MkDocs</h1>
-<p>For full documentation visit <a href="https://www.mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+  <h1>Home</h1>
+
+<p>
+<script type="math/tex">\textbf{Ecuaciones Diferenciales Ordinarias (ODEs)}</script>
+</p>
+<p>Para esta tarea se usaron tres distintos métodos para trabajar con ecuaciones diferenciales no lineales.</p>
+<p>1) Método de Euler </p>
+<p>El método de Euler se basa en una expansión de Taylor de la función de x(t). Por ser un método simple, su aproximación es menos precisa en comparación a los otros métodos utilizados. Para iniciar este método se debe encontrar el número de pasos que vamos a considerar. Mediante la siguiente ecuación: </p>
+<p>
+<script type="math/tex; mode=display">N=\frac{(tf-t0)}{h}</script>
+</p>
+<p>N siendo el número de pasos, tf tiempo final y t0 tiempo inicial. Luego para hacer las iteraciones el valor de x me varía de la forma:
+<script type="math/tex; mode=display">{x(t + h) = x(t) + hf(x,t)}</script>
+</p>
+<p>Y t varía de la forma: 
+<script type="math/tex; mode=display">{t_{n+1}=t_n+h}</script>
+</p>
+<p>2) Método de Runge-Kutta 2do Orden (RK2)
+Este método también es llamado punto medio, ya que se basa en este principio matemático. Se inicia con las siguientes dos ecuaciones: 
+<script type="math/tex; mode=display">k_1=hf(x_0, t_0)</script>
+<script type="math/tex; mode=display">k_2=hf(x_0+\frac {k1}{2}, t_0 + \frac{h}{2})</script>
+</p>
+<p>Luego con estos valores encontrados, podemos actualizar los valores de x y t, con las siguientes ecuaciones: 
+<script type="math/tex; mode=display">x(t+h)=x(t)+k_2</script>
+<script type="math/tex; mode=display">t=t+h</script>
+</p>
+<p>Y este proceso se repite de manera iterativa, hasta llegar al tiempo final deseado. </p>
+<p>3) Método de Runge-Kutta 4to Orden (RK4)</p>
+<p>Por último se trabaja con este método, que sigue la misma idea de RK2. La diferencia es que se trabajan con más ecuaciones de k, mostradas a continuación: 
+<script type="math/tex; mode=display">k1 = h * f(x[n], t[n])</script>
+<script type="math/tex; mode=display">k2 = h * f(x[n] + 0.5 * k1, t[n] + 0.5 * h)</script>
+<script type="math/tex; mode=display">k3 = h * f(x[n] + 0.5 * k2, t[n] + 0.5 * h)</script>
+<script type="math/tex; mode=display">k4 = h * f(x[n] + k3, t[n] + h)</script>
+</p>
+<p>Luego se actualizan los valores de x, t, con: 
+<script type="math/tex; mode=display">x[n + 1] = x[n] + \frac{(k1 + 2*k2 + 2*k3 + k4)}{6}</script>
+<script type="math/tex; mode=display">t[n + 1] = t[n] + h</script>
+</p>
+<p>De los tres métodos utilizados en este proyecto, este es el que mejores valores aproximados genera.</p>
 
 
 
