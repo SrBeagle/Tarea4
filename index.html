@@ -8,15 +8,15 @@
       
       
       
-        <link rel="canonical" href="https://SrBeagle.github.io/Tarea4/index.html">
+        <link rel="canonical" href="https://SrBeagle.github.io/Tarea4/">
       
       
       
-        <link rel="next" href="reference.html">
+        <link rel="next" href="reference/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="assets/_mkdocstrings.css">
+    
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -50,16 +52,7 @@
     
     
     
-   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+  </head>
   
   
     <body dir="ltr">
@@ -82,7 +75,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="Tarea 4 ODES" class="md-header__button md-logo" aria-label="Tarea 4 ODES" data-md-component="logo">
+    <a href="." title="Tarea 4 ODES" class="md-header__button md-logo" aria-label="Tarea 4 ODES" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -139,7 +132,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -189,7 +182,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="Tarea 4 ODES" class="md-nav__button md-logo" aria-label="Tarea 4 ODES" data-md-component="logo">
+    <a href="." title="Tarea 4 ODES" class="md-nav__button md-logo" aria-label="Tarea 4 ODES" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -226,7 +219,7 @@
       
       
       
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+      <a href="." class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -247,7 +240,7 @@
   
   
     <li class="md-nav__item">
-      <a href="reference.html" class="md-nav__link">
+      <a href="reference/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -267,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="about.html" class="md-nav__link">
+      <a href="about/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -316,42 +309,32 @@
 
   <h1>Home</h1>
 
-<p>
-<script type="math/tex">\textbf{Ecuaciones Diferenciales Ordinarias (ODEs)}</script>
-</p>
+<p><span class="arithmatex">\(\textbf{Ecuaciones Diferenciales Ordinarias (ODEs)}\)</span></p>
 <p>Para esta tarea se usaron tres distintos métodos para trabajar con ecuaciones diferenciales no lineales.</p>
 <p>1) Método de Euler </p>
 <p>El método de Euler se basa en una expansión de Taylor de la función de x(t). Por ser un método simple, su aproximación es menos precisa en comparación a los otros métodos utilizados. Para iniciar este método se debe encontrar el número de pasos que vamos a considerar. Mediante la siguiente ecuación: </p>
-<p>
-<script type="math/tex; mode=display">N=\frac{(tf-t0)}{h}</script>
-</p>
+<div class="arithmatex">\[N=\frac{(tf-t0)}{h}\]</div>
 <p>N siendo el número de pasos, tf tiempo final y t0 tiempo inicial. Luego para hacer las iteraciones el valor de x me varía de la forma:
-<script type="math/tex; mode=display">{x(t + h) = x(t) + hf(x,t)}</script>
-</p>
+<span class="arithmatex">\(<span class="arithmatex">\({x(t + h) = x(t) + hf(x,t)}\)</span>\)</span></p>
 <p>Y t varía de la forma: 
-<script type="math/tex; mode=display">{t_{n+1}=t_n+h}</script>
-</p>
+<span class="arithmatex">\(<span class="arithmatex">\({t_{n+1}=t_n+h}\)</span>\)</span></p>
 <p>2) Método de Runge-Kutta 2do Orden (RK2)
 Este método también es llamado punto medio, ya que se basa en este principio matemático. Se inicia con las siguientes dos ecuaciones: 
-<script type="math/tex; mode=display">k_1=hf(x_0, t_0)</script>
-<script type="math/tex; mode=display">k_2=hf(x_0+\frac {k1}{2}, t_0 + \frac{h}{2})</script>
-</p>
+<span class="arithmatex">\(<span class="arithmatex">\(k_1=hf(x_0, t_0)\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(k_2=hf(x_0+\frac {k1}{2}, t_0 + \frac{h}{2})\)</span>\)</span></p>
 <p>Luego con estos valores encontrados, podemos actualizar los valores de x y t, con las siguientes ecuaciones: 
-<script type="math/tex; mode=display">x(t+h)=x(t)+k_2</script>
-<script type="math/tex; mode=display">t=t+h</script>
-</p>
+<span class="arithmatex">\(<span class="arithmatex">\(x(t+h)=x(t)+k_2\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(t=t+h\)</span>\)</span></p>
 <p>Y este proceso se repite de manera iterativa, hasta llegar al tiempo final deseado. </p>
 <p>3) Método de Runge-Kutta 4to Orden (RK4)</p>
 <p>Por último se trabaja con este método, que sigue la misma idea de RK2. La diferencia es que se trabajan con más ecuaciones de k, mostradas a continuación: 
-<script type="math/tex; mode=display">k1 = h * f(x[n], t[n])</script>
-<script type="math/tex; mode=display">k2 = h * f(x[n] + 0.5 * k1, t[n] + 0.5 * h)</script>
-<script type="math/tex; mode=display">k3 = h * f(x[n] + 0.5 * k2, t[n] + 0.5 * h)</script>
-<script type="math/tex; mode=display">k4 = h * f(x[n] + k3, t[n] + h)</script>
-</p>
+<span class="arithmatex">\(<span class="arithmatex">\(k1 = h * f(x[n], t[n])\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(k2 = h * f(x[n] + 0.5 * k1, t[n] + 0.5 * h)\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(k3 = h * f(x[n] + 0.5 * k2, t[n] + 0.5 * h)\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(k4 = h * f(x[n] + k3, t[n] + h)\)</span>\)</span></p>
 <p>Luego se actualizan los valores de x, t, con: 
-<script type="math/tex; mode=display">x[n + 1] = x[n] + \frac{(k1 + 2*k2 + 2*k3 + k4)}{6}</script>
-<script type="math/tex; mode=display">t[n + 1] = t[n] + h</script>
-</p>
+<span class="arithmatex">\(<span class="arithmatex">\(x[n + 1] = x[n] + \frac{(k1 + 2*k2 + 2*k3 + k4)}{6}\)</span>\)</span>
+<span class="arithmatex">\(<span class="arithmatex">\(t[n + 1] = t[n] + h\)</span>\)</span></p>
 <p>De los tres métodos utilizados en este proyecto, este es el que mejores valores aproximados genera.</p>
 
 
@@ -402,12 +385,16 @@ Este método también es llamado punto medio, ya que se basa en este principio m
     <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="assets/javascripts/bundle.fe8b6f2b.min.js"></script>
+      
+        <script src="javascript/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
     
-  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
+  </body>
 </html>
