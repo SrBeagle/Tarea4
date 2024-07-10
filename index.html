@@ -314,27 +314,27 @@
 <p>1) Método de Euler </p>
 <p>El método de Euler se basa en una expansión de Taylor de la función de x(t). Por ser un método simple, su aproximación es menos precisa en comparación a los otros métodos utilizados. Para iniciar este método se debe encontrar el número de pasos que vamos a considerar. Mediante la siguiente ecuación: </p>
 <div class="arithmatex">\[N=\frac{(tf-t0)}{h}\]</div>
-<p>N siendo el número de pasos, tf tiempo final y t0 tiempo inicial. Luego para hacer las iteraciones el valor de x me varía de la forma:
-<span class="arithmatex">\(<span class="arithmatex">\({x(t + h) = x(t) + hf(x,t)}\)</span>\)</span></p>
-<p>Y t varía de la forma: 
-<span class="arithmatex">\(<span class="arithmatex">\({t_{n+1}=t_n+h}\)</span>\)</span></p>
+<p>N siendo el número de pasos, tf tiempo final y t0 tiempo inicial. Luego para hacer las iteraciones el valor de x me varía de la forma:</p>
+<div class="arithmatex">\[{x(t + h) = x(t) + hf(x,t)}\]</div>
+<p>Y t varía de la forma:</p>
+<div class="arithmatex">\[{t_{n+1}=t_n+h}\]</div>
 <p>2) Método de Runge-Kutta 2do Orden (RK2)
-Este método también es llamado punto medio, ya que se basa en este principio matemático. Se inicia con las siguientes dos ecuaciones: 
-<span class="arithmatex">\(<span class="arithmatex">\(k_1=hf(x_0, t_0)\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(k_2=hf(x_0+\frac {k1}{2}, t_0 + \frac{h}{2})\)</span>\)</span></p>
-<p>Luego con estos valores encontrados, podemos actualizar los valores de x y t, con las siguientes ecuaciones: 
-<span class="arithmatex">\(<span class="arithmatex">\(x(t+h)=x(t)+k_2\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(t=t+h\)</span>\)</span></p>
+Este método también es llamado punto medio, ya que se basa en este principio matemático. Se inicia con las siguientes dos ecuaciones:</p>
+<div class="arithmatex">\[k_1=hf(x_0, t_0)\]</div>
+<div class="arithmatex">\[k_2=hf(x_0+\frac {k1}{2}, t_0 + \frac{h}{2})\]</div>
+<p>Luego con estos valores encontrados, podemos actualizar los valores de x y t, con las siguientes ecuaciones: </p>
+<div class="arithmatex">\[x(t+h)=x(t)+k_2\]</div>
+<div class="arithmatex">\[t=t+h\]</div>
 <p>Y este proceso se repite de manera iterativa, hasta llegar al tiempo final deseado. </p>
 <p>3) Método de Runge-Kutta 4to Orden (RK4)</p>
-<p>Por último se trabaja con este método, que sigue la misma idea de RK2. La diferencia es que se trabajan con más ecuaciones de k, mostradas a continuación: 
-<span class="arithmatex">\(<span class="arithmatex">\(k1 = h * f(x[n], t[n])\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(k2 = h * f(x[n] + 0.5 * k1, t[n] + 0.5 * h)\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(k3 = h * f(x[n] + 0.5 * k2, t[n] + 0.5 * h)\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(k4 = h * f(x[n] + k3, t[n] + h)\)</span>\)</span></p>
-<p>Luego se actualizan los valores de x, t, con: 
-<span class="arithmatex">\(<span class="arithmatex">\(x[n + 1] = x[n] + \frac{(k1 + 2*k2 + 2*k3 + k4)}{6}\)</span>\)</span>
-<span class="arithmatex">\(<span class="arithmatex">\(t[n + 1] = t[n] + h\)</span>\)</span></p>
+<p>Por último se trabaja con este método, que sigue la misma idea de RK2. La diferencia es que se trabajan con más ecuaciones de k, mostradas a continuación: </p>
+<div class="arithmatex">\[k1 = h * f(x[n], t[n])\]</div>
+<div class="arithmatex">\[k2 = h * f(x[n] + 0.5 * k1, t[n] + 0.5 * h)\]</div>
+<div class="arithmatex">\[k3 = h * f(x[n] + 0.5 * k2, t[n] + 0.5 * h)\]</div>
+<div class="arithmatex">\[k4 = h * f(x[n] + k3, t[n] + h)\]</div>
+<p>Luego se actualizan los valores de x, t, con: </p>
+<div class="arithmatex">\[x[n + 1] = x[n] + \frac{(k1 + 2*k2 + 2*k3 + k4)}{6}\]</div>
+<div class="arithmatex">\[t[n + 1] = t[n] + h\]</div>
 <p>De los tres métodos utilizados en este proyecto, este es el que mejores valores aproximados genera.</p>
 
 
